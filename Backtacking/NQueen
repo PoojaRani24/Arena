@@ -1,3 +1,9 @@
+
+//BACKTRACKING
+//Brute force approach
+//takes exponential time
+//Used when we have to find all the possible combinations.
+
 #include <bits/stdc++.h>
 using namespace std;
 
