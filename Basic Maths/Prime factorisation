@@ -20,6 +20,7 @@ int main() {
 		}
 	}
 	
+	//prime number
 	if(n>2)
 	    v.push_back(n);
 	    
