@@ -1,4 +1,5 @@
 //takes O(mn) time
+//O(mn) space
 //base case: only one path to reach 0th row and 0th col
 #include<iostream>
 using namespace std;
