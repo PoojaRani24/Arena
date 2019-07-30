@@ -1,0 +1,20 @@
+#include<iostream>
+using namespace std;
+int main()
+ {
+	//code
+	int t;
+	cin>>t;
+	while(t--){
+	    int n,k;
+	    cin>>n>>k;
+	    //indexing start from 0, hence n>>k times
+	    //if indexing starts from 1 then n>>(k-1) times
+	    n=n>>k;
+	    if(1&n)
+	    cout<<"Yes"<<endl;
+	    else
+	    cout<<"No"<<endl;
+	}
+	return 0;
+}
