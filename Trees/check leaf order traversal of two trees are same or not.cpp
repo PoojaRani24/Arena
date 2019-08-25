@@ -1,3 +1,7 @@
+//uses extra O(m+n) space where
+// m = number of leaf nodes in first tree
+//n = leaf nodes in second tree
+// optimised solution takes o(h1+h2) space
 #include <iostream>
 #include <vector>
 using namespace std;
