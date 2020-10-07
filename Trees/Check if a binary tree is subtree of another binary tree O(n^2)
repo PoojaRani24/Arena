@@ -1,0 +1,24 @@
+bool areIdentical(Node* T, Node* S){
+    if(T==NULL && S==NULL)
+        return true;
+    if(T==NULL || S==NULL)
+        return false;
+    return (T->data==S->data 
+        && areIdentical(T->left,S->left) 
+        && areIdentical(T->right,S->right));
+}
+
+bool isSubTree(Node* T, Node* S) {
+    // Your code here
+    // return 1 if S is subtree of T else 0
+    if(S==NULL)
+        return true;
+    if(T==NULL)
+        return false;
+    // case 1: subtree is starting with root T
+    if(areIdentical(T,S))
+        return true;
+    // case 2: subtree is starting from right or left subtree
+    return (isSubTree(T->left,S) || isSubTree(T->right,S));
+} 
+
